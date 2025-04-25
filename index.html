@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Official portfolio of Aakash Gangji - Indian pop artist from Karnataka featuring Thoda Karlo Mujhse Pyaar and The RCB Song">
+  <title>Aakash Gangji | Indian Pop Artist | Official Music Portfolio</title>
+<meta name="description" content="Listen to Aakash Gangji – Indian pop artist from Karnataka. Explore his discography, music videos, and stream 'Thoda Karlo Mujhse Pyaar' and 'The RCB Song' on Spotify, Apple Music, YouTube & more.">
+<meta name="keywords" content="Aakash Gangji, Indian pop music, Thoda Karlo Mujhse Pyaar, The RCB Song, Karnataka artist, Indian singer, Spotify artist, Apple Music India, Kannada pop, indie music India">
+<meta name="author" content="Aakash Gangji">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://aakashmusic.co/" />
+<!-- Open Graph -->
+<meta property="og:title" content="Aakash Gangji | Indian Pop Artist">
+<meta property="og:description" content="Listen to Aakash Gangji – Indian pop artist from Karnataka. Explore discography and music videos.">
+<meta property="og:image" content="https://aakashgangji.vip/images/rcb.png">
+<meta property="og:url" content="https://aakashmusic.co">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aakash Gangji | Indian Pop Artist">
+<meta name="twitter:description" content="Official portfolio of Aakash Gangji – Indian pop artist from Karnataka.">
+<meta name="twitter:image" content="https://aakashgangji.vip/images/rcb.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    {
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "@id": "https://aakashgangji.vip",
+  "mainEntityOfPage": "https://aakashgangji.vip",
+  "name": "Aakash Gangji",
+  "description": "Indian pop artist from Karnataka featuring Thoda Karlo Mujhse Pyaar and The RCB Song",
+  "url": "https://aakashgangji.vip",
+  "genre": ["Pop", "Indian Pop"],
+  "image": "https://aakashgangji.vip/images/aakash.png",
+  "sameAs": [
+    "https://instagram.com/aakashgangji",
+    "https://youtube.com/channel/UCjm7O7W-NUrjSUq0pVUm8Dg",
+    "https://open.spotify.com/artist/0q8iGRi1gXSAMj7PhdZsVn"
+  ]
+}
+
+    :root {
+      --dark: #121212;
+      --light: #f8f9fa;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--dark);
+      color: var(--light);
+      overflow-x: hidden;
+      padding-top: 70px;
+    }
+    
+    /* Disco Light Background */
+    .disco-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      z-index: -2;
+      overflow: hidden;
+    }
+    
+    .light-spot {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.3;
+      animation: moveSpot 15s infinite alternate;
+    }
+    
+    @keyframes moveSpot {
+      0% { transform: translate(10%, 20%) scale(1); }
+      25% { transform: translate(80%, 40%) scale(1.2); }
+      50% { transform: translate(30%, 70%) scale(0.8); }
+      75% { transform: translate(70%, 20%) scale(1.1); }
+      100% { transform: translate(20%, 60%) scale(0.9); }
+    }
+    
+    .spot-1 {
+      width: 300px;
+      height: 300px;
+      background: #3B82F6;
+      top: 10%;
+      left: 20%;
+      animation-delay: 0s;
+    }
+    
+    .spot-2 {
+      width: 400px;
+      height: 400px;
+      background: #10B981;
+      bottom: 15%;
+      right: 10%;
+      animation-delay: 3s;
+    }
+    
+    .spot-3 {
+      width: 350px;
+      height: 350px;
+      background: #EC4899;
+      top: 40%;
+      left: 70%;
+      animation-delay: 6s;
+    }
+    
+    .spot-4 {
+      width: 250px;
+      height: 250px;
+      background: #F59E0B;
+      bottom: 30%;
+      left: 10%;
+      animation-delay: 9s;
+    }
+    
+    /* Fixed Navigation */
+    .fixed-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(18, 18, 18, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .verified-badge {
+      color: #1DA1F2;
+      font-size: 0.9em;
+      margin-left: 4px;
+    }
+    
+    .glass-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    }
+    
+    /* CD Animation */
+    .cd-spin {
+      animation: spin 20s linear infinite;
+    }
+    
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    /* CD Hover Effect */
+    .poster-container {
+      position: relative;
+      width: 96px;
+      height: 96px;
+      overflow: hidden;
+    }
+    
+    .poster-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease;
+      z-index: 2;
+    }
+    
+    .cd-image {
+      position: absolute;
+      top: 0;
+      right: 0%;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    
+    .poster-container:hover .poster-image {
+      transform: translateX(50%);
+    }
+    
+    .hover-grow {
+      transition: transform 0.3s ease;
+    }
+    
+    .hover-grow:hover {
+      transform: scale(1.05);
+    }
+    
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+    }
+    
+    .social-icon {
+      transition: all 0.3s ease;
+      color: white;
+    }
+    
+    .social-icon:hover {
+      transform: translateY(-5px);
+    }
+    
+    .platform-btn {
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+    
+    .platform-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .platform-btn::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: all 0.5s ease;
+    }
+    
+    .platform-btn:hover::after {
+      left: 100%;
+    }
+    
+    /* Contact Button */
+    .contact-btn {
+      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .contact-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
+    }
+    
+    /* Analytics Loader */
+    #analytics-loader {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      background: rgba(0,0,0,0.7);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <!-- Disco Light Background -->
+  <div class="disco-bg">
+    <div class="light-spot spot-1"></div>
+    <div class="light-spot spot-2"></div>
+    <div class="light-spot spot-3"></div>
+    <div class="light-spot spot-4"></div>
+  </div>
+
+  <!-- Fixed Navigation -->
+<nav class="fixed-nav py-4 px-6 flex justify-between items-center">
+    <!-- Left: Brand (Clickable to scroll to top) -->
+    <div class="flex items-center">
+      <a href="#top" class="text-xl font-bold text-white flex items-center">
+        Aakash Gangji <i class="fas fa-check-circle verified-badge"></i>
+      </a>
+    </div>
+  
+    <!-- Center: Navigation Links -->
+    <ul class="hidden md:flex space-x-6 text-white font-medium text-sm">
+      <li><a href="#about" class="hover:underline">About</a></li>
+      <li><a href="#stream" class="hover:underline">Stream</a></li>
+      <li><a href="#contact" class="hover:underline">Contact Me</a></li>
+    </ul>
+  
+    <!-- Right: Social Icons -->
+    <div class="flex space-x-4">
+      <a href="https://instagram.com/aakashgangji" target="_blank" rel="noopener noreferrer" class="social-icon text-xl">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://snapchat.com/t/EhlZc8d2" target="_blank" rel="noopener noreferrer" class="social-icon text-xl">
+        <i class="fab fa-snapchat"></i>
+      </a>
+      <a href="https://www.youtube.com/@aakashgangji" target="_blank" rel="noopener noreferrer" class="social-icon text-xl">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://open.spotify.com/artist/0q8iGRi1gXSAMj7PhdZsVn?si=WJ6KmS4xR4aioj4XXbngkw" target="_blank" rel="noopener noreferrer" class="social-icon text-xl">
+        <i class="fab fa-spotify"></i>
+      </a>
+    </div>
+  </nav>
+  
+  
+  <body class="min-h-screen" id="top">
+  <div class="container mx-auto px-4 py-8 md:py-12 max-w-6xl">
+    <!-- Featured Release -->
+    <section class="mb-12">
+      <div class="flex items-center mb-6">
+        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center mr-4">
+          <i class="fas fa-fire text-white text-xl"></i>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white">Featured Release</h2>
+      </div>
+      
+      <div class="glass-card p-6 flex flex-col md:flex-row items-center hover-grow">
+        <div class="poster-container relative mb-6 md:mb-0 md:mr-8 w-48 h-48">
+          <img src="images/cd.png" alt="CD" class="cd-image cd-spin">
+          <img src="images/poster.png" alt="Thoda Karlo Mujhse Pyaar" class="poster-image">
+        </div>
+        
+        <div class="text-center md:text-left">
+          <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Thoda Karlo Mujhse Pyaar</h3>
+          <p class="text-gray-400 mb-1">feat. Syed Mavahid & Abhishek Kanti</p>
+          <p class="text-sm text-gray-500 mb-4">Released: August 11, 2024</p>
+          
+          <div class="flex flex-wrap justify-center md:justify-start gap-3">
+            <a href="https://open.spotify.com/track/5SqUc5g7fyafZhD55j2g8i?si=78fa11bda26c4bbc" 
+               target="_blank" rel="noopener noreferrer"
+               class="platform-btn px-6 py-2 rounded-full flex items-center">
+              <i class="fab fa-spotify mr-2"></i> Spotify
+            </a>
+            <a href="https://music.apple.com/us/album/thoda-karlo-mujhse-pyaar-feat-syed-mavahid-abhishek-kanti/1762187354?i=1762187355" 
+               target="_blank" rel="noopener noreferrer"
+               class="platform-btn px-6 py-2 rounded-full flex items-center">
+              <i class="fab fa-apple mr-2"></i> Apple Music
+            </a>
+            <a href="https://www.youtube.com/watch?v=2zvngEL9KjU" 
+               target="_blank" rel="noopener noreferrer"
+               class="platform-btn px-6 py-2 rounded-full flex items-center">
+              <i class="fab fa-youtube mr-2"></i> YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stream" class="mb-12"> <!-- Add this ID -->
+
+    <!-- Stream Everywhere -->
+    <section class="mb-12">
+      <div class="flex items-center mb-6">
+        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center mr-4">
+          <i class="fas fa-headphones text-white text-xl"></i>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white">Stream Everywhere</h2>
+      </div>
+      
+      <div class="glass-card p-6 md:p-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <a href="https://music.apple.com/in/artist/aakash-gangji/1762185699" target="_blank" rel="noopener noreferrer"
+             class="platform-btn p-4 rounded-lg flex flex-col items-center">
+            <i class="fab fa-apple text-4xl mb-2"></i>
+            <span>Apple Music</span>
+          </a>
+          <a href="https://open.spotify.com/artist/0q8iGRi1gXSAMj7PhdZsVn?si=WJ6KmS4xR4aioj4XXbngkw" target="_blank" rel="noopener noreferrer"
+             class="platform-btn p-4 rounded-lg flex flex-col items-center">
+            <i class="fab fa-spotify text-4xl mb-2"></i>
+            <span>Spotify</span>
+          </a>
+          <a href="https://music.youtube.com/channel/UCjm7O7W-NUrjSUq0pVUm8Dg?si=L_bYmruB2S8Gs9UW" target="_blank" rel="noopener noreferrer"
+             class="platform-btn p-4 rounded-lg flex flex-col items-center">
+            <i class="fab fa-youtube text-4xl mb-2"></i>
+            <span>YouTube Music</span>
+          </a>
+          <a href="https://amazon.com/music/player/artists/B0DCNR3YYJ/aakash-gangji?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_1iWT9eHKYgJjIlMYx9ilokyLy" target="_blank" rel="noopener noreferrer"
+             class="platform-btn p-4 rounded-lg flex flex-col items-center">
+            <i class="fab fa-amazon text-4xl mb-2"></i>
+            <span>Amazon Music</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Discography -->
+    <section class="mb-12">
+      <div class="flex items-center mb-6">
+        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center mr-4">
+          <i class="fas fa-compact-disc text-white text-xl"></i>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white">Discography</h2>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Track 1 -->
+        <div class="glass-card p-6 flex items-center hover-grow">
+          <div class="poster-container relative w-24 h-24 mr-6">
+            <img src="images/cd.png" alt="CD" class="cd-image cd-spin">
+            <img src="images/poster.png" alt="Thoda Karlo Mujhse Pyaar" class="poster-image">
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-1">Thoda Karlo Mujhse Pyaar</h3>
+            <p class="text-sm text-gray-400 mb-2">August 2024</p>
+            <div class="flex space-x-2">
+              <a href="https://open.spotify.com/track/5SqUc5g7fyafZhD55j2g8i?si=1cc0ce56e28a460b" class="text-gray-500 hover:text-white"><i class="fab fa-spotify"></i></a>
+              <a href="https://music.apple.com/us/album/thoda-karlo-mujhse-pyaar-feat-syed-mavahid-abhishek/1762187354" class="text-gray-500 hover:text-white"><i class="fab fa-apple"></i></a>
+              <a href="https://www.youtube.com/watch?v=8HeL6L487Yk" class="text-gray-500 hover:text-white"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Track 2 -->
+        <div class="glass-card p-6 flex items-center hover-grow">
+          <div class="poster-container relative w-24 h-24 mr-6">
+            <img src="images/cd.png" alt="CD" class="cd-image cd-spin">
+            <img src="images/rcb.png" alt="The RCB Song" class="poster-image">
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-1">The RCB Song</h3>
+            <p class="text-sm text-gray-400 mb-2">2019</p>
+            <div class="flex space-x-2">
+                <a href="https://open.spotify.com/track/5xOZHJ7n4pfgue9Lffrs4x?si=718e62dfaae44313" class="text-gray-500 hover:text-white"><i class="fab fa-spotify"></i></a>
+                <a href="https://music.apple.com/us/song/the-rcb-song/1806730026" class="text-gray-500 hover:text-white"><i class="fab fa-apple"></i></a>
+                <a href="https://youtu.be/ZDOuwi85-uQ?si=qBRLxqhIqQ8ltI10" class="text-gray-500 hover:text-white"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Music Videos -->
+    <section class="mb-12">
+      <div class="flex items-center mb-6">
+        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center mr-4">
+          <i class="fas fa-video text-white text-xl"></i>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white">Music Videos</h2>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/2zvngEL9KjU" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/ZDOuwi85-uQ" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="mb-12"> <!-- Add this ID -->
+
+    <!-- About -->
+    <section class="mb-12">
+      <div class="flex items-center mb-6">
+        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center mr-4">
+          <i class="fas fa-user text-white text-xl"></i>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white">About Me</h2>
+      </div>
+      <div class="glass-card p-6 md:p-8 hover-grow">
+        <div class="space-y-4 text-gray-300">
+          <p>
+            I’m Aakash Gangji, an artist born on July 4, 2000, in Kalaburagi, Karnataka, India. My musical journey kicked off in 2019 when I released “The RCB Song,” a Kannada rap parody that quickly went viral and let me share my creativity and love for music with a wider audience. That moment marked the true beginning of my passion for making music that connects with people emotionally.</p>
+          <p>
+            Since then, my sound has evolved. My debut single, “Thoda Karlo Mujhse Pyaar” (featuring Syed Mavahid & Abhishek Kanti, produced by Saikumar Hodalur), represents a new chapter in my artistry. This track is especially close to my heart—it’s raw, honest, and packed with emotion, blending heartfelt lyrics with contemporary melodies and production. Through every release, I strive to capture real feelings and tell stories that resonate with listeners.          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="mb-12"> <!-- Add this ID -->
+
+    <!-- Contact -->
+    <section class="mb-12">
+      <div class="flex items-center mb-6">
+        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center mr-4">
+          <i class="fas fa-envelope text-white text-xl"></i>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white">Contact Me</h2>
+      </div>
+      <div class="glass-card p-6 md:p-8 text-center hover-grow">
+        <p class="mb-6 text-gray-300">For business inquiries, collaborations, or just to say hello!</p>
+        <a href="mailto:gangjiaakash@gmail.com" 
+           class="contact-btn inline-block px-8 py-3 rounded-full text-white font-medium">
+          <i class="fas fa-paper-plane mr-2"></i> Email Me
+        </a>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="mt-16 text-center text-gray-500 text-sm">
+      <p>© 2025 Aakash Gangji. All rights reserved.</p>
+      <!-- <p class="mt-2">Made with <i class="fas fa-heart text-red-500"></i> for music lovers</p> -->
+    </footer>
+  </div>
+
+  <!-- Schema.org Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "Aakash Gangji",
+      "description": "Indian pop artist from Karnataka featuring Thoda Karlo Mujhse Pyaar and The RCB Song",
+      "url": "https://aakashmusic.co",
+      "genre": ["Pop", "Indian Pop"],
+      "image": "https://aakashgangji.vip/images/poster.png",
+      "sameAs": [
+        "https://instagram.com/aakashgangji",
+        "https://youtube.com/channel/UCjm7O7W-NUrjSUq0pVUm8Dg",
+        "https://open.spotify.com/artist/0q8iGRi1gXSAMj7PhdZsVn"
+      ]
+    }
+  </script>
+
+  <!-- Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script> -->
+
+  <!-- Analytics Loader Indicator -->
+  <!-- <div id="analytics-loader" title="Analytics Active">
+    <i class="fas fa-chart-line text-white"></i>
+  </div> -->
+</body>
+</html>
