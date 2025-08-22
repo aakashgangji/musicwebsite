@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Learn more about Aakash Gangji – Indian artist from Karnataka. Discover his musical journey, from viral hits to heartfelt singles.">
+  <meta name="keywords" content="Aakash Gangji, Indian music, Karnataka artist, Indian singer, Kalaburagi, musical journey, Thoda Karlo Mujhse Pyaar, Bhai Mere Saath, The RCB Song">
+  <meta name="author" content="Aakash Gangji">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://aakashmusic.co/about" />
+  <meta property="og:title" content="About Aakash Gangji | Indian Artist">
+  <meta property="og:description" content="Learn more about Aakash Gangji – Indian artist from Karnataka. Discover his musical journey and story.">
+  <meta property="og:image" content="https://aakashmusic.co/images/as.png">
+  <meta property="og:url" content="https://aakashmusic.co/about">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Aakash Gangji | Indian Artist">
+  <meta name="twitter:description" content="Learn more about Aakash Gangji – Indian artist from Karnataka.">
+  <meta name="twitter:image" content="https://aakashmusic.co/images/as.png">
+  <title>About Aakash Gangji | Indian Artist</title>
+  <link rel="icon" type="image/png" href="images/as.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    :root {
+      --dark: #121212;
+      --light: #f8f9fa;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--dark);
+      color: var(--light);
+      overflow-x: hidden;
+      padding-top: 70px;
+    }
+    
+    .disco-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      z-index: -2;
+      overflow: hidden;
+    }
+    
+    .light-spot {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.3;
+      animation: moveSpot 15s infinite alternate;
+    }
+    
+    @keyframes moveSpot {
+      0% { transform: translate(10%, 20%) scale(1); }
+      25% { transform: translate(80%, 40%) scale(1.2); }
+      50% { transform: translate(30%, 70%) scale(0.8); }
+      75% { transform: translate(70%, 20%) scale(1.1); }
+      100% { transform: translate(20%, 60%) scale(0.9); }
+    }
+    
+    .spot-1 {
+      width: 300px;
+      height: 300px;
+      background: #3B82F6;
+      top: 10%;
+      left: 20%;
+      animation-delay: 0s;
+    }
+    
+    .spot-2 {
+      width: 400px;
+      height: 400px;
+      background: #10B981;
+      bottom: 15%;
+      right: 10%;
+      animation-delay: 3s;
+    }
+    
+    .spot-3 {
+      width: 350px;
+      height: 350px;
+      background: #EC4899;
+      top: 40%;
+      left: 70%;
+      animation-delay: 6s;
+    }
+    
+    .spot-4 {
+      width: 250px;
+      height: 250px;
+      background: #F59E0B;
+      bottom: 30%;
+      left: 10%;
+      animation-delay: 9s;
+    }
+    
+    .fixed-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(18, 18, 18, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .verified-badge {
+      color: #1DA1F2;
+      font-size: 0.9em;
+      margin-left: 4px;
+    }
+    
+    .glass-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    }
+    
+    .hover-grow {
+      transition: transform 0.3s ease;
+    }
+    
+    .hover-grow:hover {
+      transform: scale(1.02);
+    }
+    
+    .social-icon {
+      transition: all 0.3s ease;
+      color: white;
+    }
+    
+    .social-icon:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="disco-bg">
+    <div class="light-spot spot-1"></div>
+    <div class="light-spot spot-2"></div>
+    <div class="light-spot spot-3"></div>
+    <div class="light-spot spot-4"></div>
+  </div>
+
+  <nav class="fixed-nav py-4 px-6 flex justify-between items-center">
+    <div class="flex items-center">
+      <a href="index.html" class="text-xl font-bold text-white flex items-center">
+        Aakash Gangji <i class="fas fa-check-circle verified-badge"></i>
+      </a>
+    </div>
+  
+    <ul class="hidden md:flex space-x-6 text-white font-medium text-sm">
+      <li><a href="about.html" class="hover:underline text-blue-400">About</a></li>
+      <li><a href="index.html#stream" class="hover:underline">Stream</a></li>
+      <li><a href="index.html#contact" class="hover:underline">Contact Me</a></li>
+    </ul>
+  
+    <div class="flex space-x-4">
+      <a href="https://instagram.com/aakashgangji" target="_blank" rel="noopener noreferrer" class="social-icon text-xl">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://snapchat.com/t/EhlZc8d2" target="_blank" rel="noopener noreferrer" class="social-icon text-xl">
+        <i class="fab fa-snapchat"></i>
+      </a>
+      <a href="https://www.youtube.com/@aakashgangji" target="_blank" rel="noopener noreferrer" class="social-icon text-xl">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://open.spotify.com/artist/0q8iGRi1gXSAMj7PhdZsVn?si=WJ6KmS4xR4aioj4XXbngkw" target="_blank" rel="noopener noreferrer" class="social-icon text-xl">
+        <i class="fab fa-spotify"></i>
+      </a>
+    </div>
+  </nav>
+
+  <div class="container mx-auto px-4 py-8 md:py-12 max-w-4xl">
+    <section class="mb-12">
+      <div class="flex items-center mb-6">
+        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center mr-4">
+          <i class="fas fa-user text-white text-xl"></i>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-bold text-white">About Me</h1>
+      </div>
+      
+      <div class="glass-card p-6 md:p-8 hover-grow">
+        <div class="space-y-6 text-gray-300 text-lg leading-relaxed">
+          <p>
+            I'm Aakash Gangji, an artist from Kalaburagi, Karnataka. My musical journey began in 2019 when my Kannada rap parody "The RCB Song" went viral, opening doors to share my creativity and emotions with a wider audience.
+          </p>
+          
+          <p>
+            Since then, my sound has grown, leading to my heartfelt debut single "Thoda Karlo Mujhse Pyaar" (featuring Syed Mavahid & Abhishek Kanti, produced by Saikumar Hodalur). This track represents a significant milestone in my artistic evolution, showcasing my ability to blend different musical styles and collaborate with talented artists.
+          </p>
+          
+          <p>
+            I'm also proud of my latest track "Bhai Mere Saath," dedicated to my close friends who embody true brotherhood standing by me while some others create drama just for attention. This song reflects the genuine relationships that matter most in life.
+          </p>
+          
+          <p>
+            With every song, I aim to tell honest stories and connect with listeners through genuine feelings. My music is a reflection of my experiences, emotions, and the world around me, expressed through melodies that resonate with people from all walks of life.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <div class="flex items-center mb-6">
+        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center mr-4">
+          <i class="fas fa-music text-white text-xl"></i>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white">Musical Journey</h2>
+      </div>
+      
+      <div class="glass-card p-6 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-white mb-3">2019 - The Beginning</h3>
+            <p class="text-gray-300">
+              "The RCB Song" - A viral Kannada rap parody that introduced me to the world of music and showed me the power of connecting with audiences through relatable content.
+            </p>
+          </div>
+          
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-white mb-3">2024 - Debut Single</h3>
+            <p class="text-gray-300">
+              "Thoda Karlo Mujhse Pyaar" - My first official single featuring Syed Mavahid & Abhishek Kanti, produced by Saikumar Hodalur, marking my entry into the professional music scene.
+            </p>
+          </div>
+          
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-white mb-3">2025 - Latest Release</h3>
+            <p class="text-gray-300">
+              "Bhai Mere Saath" - A tribute to true friendship and brotherhood, celebrating the genuine relationships that stand the test of time.
+            </p>
+          </div>
+          
+          <div class="space-y-4">
+            <h3 class="text-xl font-bold text-white mb-3">Future</h3>
+            <p class="text-gray-300">
+              "Bharat Won" - An upcoming release that continues my journey of storytelling through music, exploring new themes and musical directions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <div class="flex items-center mb-6">
+        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center mr-4">
+          <i class="fas fa-map-marker-alt text-white text-xl"></i>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white">From Kalaburagi</h2>
+      </div>
+      
+      <div class="glass-card p-6 md:p-8 hover-grow">
+        <div class="text-gray-300 text-lg leading-relaxed">
+          <p>
+            Hailing from Kalaburagi, Karnataka, I bring the rich cultural heritage and diverse musical traditions of my region into my contemporary sound. The city's vibrant atmosphere and the support of my local community have been instrumental in shaping my artistic identity.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="mt-16 text-center text-gray-500 text-sm">
+      <p>© 2025 Aakash Gangji. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Aakash Gangji",
+      "description": "Indian pop artist from Karnataka featuring Thoda Karlo Mujhse Pyaar, Bhai Mere Saath, and The RCB Song",
+      "url": "https://aakashmusic.co/about",
+      "image": "https://aakashmusic.co/images/as.png",
+      "sameAs": [
+        "https://instagram.com/aakashgangji",
+        "https://youtube.com/channel/UCjm7O7W-NUrjSUq0pVUm8Dg",
+        "https://open.spotify.com/artist/0q8iGRi1gXSAMj7PhdZsVn"
+      ]
+    }
+  </script>
+
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
